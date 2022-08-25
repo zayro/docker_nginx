@@ -1,5 +1,5 @@
 FROM nginx:alpine
-COPY conf/apiGateway.conf /etc/nginx/conf.d/default.conf
+COPY conf /etc/nginx/conf.d/default.conf
 COPY errors /etc/nginx/errors
 COPY public /usr/share/nginx/html
 VOLUME var/log/nginx/log
