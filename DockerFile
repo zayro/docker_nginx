@@ -6,4 +6,5 @@ VOLUME var/log/nginx/log
 VOLUME etc/nginx
 ENV PORT 80
 EXPOSE 80
+RUN ["/bin/bash", "-c", "ls"]
  
